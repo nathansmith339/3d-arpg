@@ -4,17 +4,14 @@ var GRAVITY_CONSTANT = -8.9
 
 var gravity = Vector3.DOWN  * -GRAVITY_CONSTANT
 var acceleration = Vector3()
-var velocity = Vector3()
+export var velocity = Vector3()
 
 func _ready():
-	$Camera.make_current()
+	pass
 
 func _physics_process(delta):
-	velocity = Vector3()
-	
 	if is_on_floor() == false:
 		velocity += gravity
-
 	move_and_slide(velocity, Vector3.DOWN)
 
 func _process(delta):

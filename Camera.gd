@@ -1,27 +1,24 @@
 extends Camera
 
-var height = 0
-var target
-var vel = Vector3()
-var offset
-var distance = 5
-const UP = Vector3(0, 1, 0) 
+const MAX_LOOK_UP_DEG = -30
+const MAX_LOOK_DOWN_DEG = 30
+const MAX_LOOK_LEFT_DEG = 45
+const MAX_LOOK_RIGHT_DEG = -45
+
+var look_speed = 0.02
 
 func _ready():
 	set_physics_process(true)
 	set_as_toplevel(true)
-	target = get_parent()
-	
+
 func _physics_process(delta):
 	var hor_dir = (int(Input.is_action_pressed("ui_left")) * -1) + int(Input.is_action_pressed("ui_right"))
 	var ver_dir = (int(Input.is_action_pressed("ui_up")) * -1) + int(Input.is_action_pressed("ui_down"))
-	if hor_dir != 0 || ver_dir != 0:
-		height = clamp(height + ver_dir * .01, -.9, 1)
-		pass
-	var target_pos = target.get_global_transform().origin
-	var self_pos = get_global_transform().origin
-	offset = self_pos - target_pos
-	offset.y = height
-	offset = offset.normalized() * distance
-	self_pos = target_pos + offset
-	look_at_from_position(self_pos, target_pos, UP)
+
+	if abs(hor_dir) + abs(ver_dir) > 0:
+		rotate_object_local(Vector3(-1, 0, 0), look_speed * ver_dir * PI) # rotate in Y first
+		rotate_object_local(Vector3(0, -1, 0), look_speed * hor_dir * PI) # then rotate in X
+
+		rotation_degrees.x = clamp(rotation_degrees.x, MAX_LOOK_UP_DEG, MAX_LOOK_DOWN_DEG)
+		rotation_degrees.y = clamp(rotation_degrees.y, MAX_LOOK_RIGHT_DEG, MAX_LOOK_LEFT_DEG)
+		rotation_degrees.z = 0

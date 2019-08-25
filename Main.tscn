@@ -21,10 +21,11 @@ points = PoolVector3Array( 20, 0, 20, -20, 0, 20, 20, 0, -20, -20, 0, -20 )
 [node name="Main" type="Node"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10516, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.37532, 0 )
 velocity = Vector3( 0, 0, 0 )
 
 [node name="Level" type="Spatial" parent="."]
+editor/display_folded = true
 
 [node name="Floor" type="MeshInstance" parent="Level"]
 mesh = SubResource( 2 )
@@ -40,136 +41,136 @@ editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0 )
 
 [node name="Wall" parent="Level/Walls" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -18 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -18 )
 
 [node name="Wall2" parent="Level/Walls" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 6 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 6 )
 
 [node name="Wall3" parent="Level/Walls" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -14 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -14 )
 
 [node name="Wall4" parent="Level/Walls" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 10 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 10 )
 
 [node name="Wall5" parent="Level/Walls" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -10 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -10 )
 
 [node name="Wall6" parent="Level/Walls" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 14 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 14 )
 
 [node name="Wall7" parent="Level/Walls" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -6 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -6 )
 
 [node name="Wall8" parent="Level/Walls" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 18 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 18 )
 
 [node name="Wall9" parent="Level/Walls" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -2 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -2 )
 
 [node name="Wall10" parent="Level/Walls" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 2 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 2 )
 
 [node name="Walls2" type="Spatial" parent="Level"]
 editor/display_folded = true
-transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 20, 0, 0 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 20, 0, 0 )
 
 [node name="Wall1" parent="Level/Walls2" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -18 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -18 )
 
 [node name="Wall2" parent="Level/Walls2" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 6 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 6 )
 
 [node name="Wall3" parent="Level/Walls2" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -14 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -14 )
 
 [node name="Wall4" parent="Level/Walls2" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 10 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 10 )
 
 [node name="Wall5" parent="Level/Walls2" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -10 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -10 )
 
 [node name="Wall6" parent="Level/Walls2" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 14 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 14 )
 
 [node name="Wall7" parent="Level/Walls2" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -6 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -6 )
 
 [node name="Wall8" parent="Level/Walls2" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 18 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 18 )
 
 [node name="Wall9" parent="Level/Walls2" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -2 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -2 )
 
 [node name="Wall10" parent="Level/Walls2" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 2 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 2 )
 
 [node name="Walls3" type="Spatial" parent="Level"]
 editor/display_folded = true
-transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, -5.96046e-008, 0, -20 )
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.96046e-08, 0, -20 )
 
 [node name="Wall1" parent="Level/Walls3" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 2 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 2 )
 
 [node name="Wall2" parent="Level/Walls3" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -18 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -18 )
 
 [node name="Wall3" parent="Level/Walls3" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 6 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 6 )
 
 [node name="Wall4" parent="Level/Walls3" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -14 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -14 )
 
 [node name="Wall5" parent="Level/Walls3" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 10 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 10 )
 
 [node name="Wall6" parent="Level/Walls3" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -10 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -10 )
 
 [node name="Wall7" parent="Level/Walls3" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 14 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 14 )
 
 [node name="Wall8" parent="Level/Walls3" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -6 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -6 )
 
 [node name="Wall9" parent="Level/Walls3" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 18 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 18 )
 
 [node name="Wall10" parent="Level/Walls3" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -2 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -2 )
 
 [node name="Walls4" type="Spatial" parent="Level"]
 editor/display_folded = true
-transform = Transform( -2.18557e-007, 0, 1, 0, 1, 0, -1, 0, -2.18557e-007, -1.19209e-007, 0, 20 )
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -1.19209e-07, 0, 20 )
 
 [node name="Wall1" parent="Level/Walls4" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 2 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 2 )
 
 [node name="Wall2" parent="Level/Walls4" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -18 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -18 )
 
 [node name="Wall3" parent="Level/Walls4" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 6 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 6 )
 
 [node name="Wall4" parent="Level/Walls4" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -14 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -14 )
 
 [node name="Wall5" parent="Level/Walls4" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 10 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 10 )
 
 [node name="Wall6" parent="Level/Walls4" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -10 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -10 )
 
 [node name="Wall7" parent="Level/Walls4" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 14 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 14 )
 
 [node name="Wall8" parent="Level/Walls4" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -6 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -6 )
 
 [node name="Wall9" parent="Level/Walls4" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, 18 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, 18 )
 
 [node name="Wall10" parent="Level/Walls4" instance=ExtResource( 3 )]
-transform = Transform( 7.54979e-008, 1, 0, -1, 7.54979e-008, 0, 0, 0, 1, 0, 2, -2 )
+transform = Transform( 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, 0, 0, 1, 0, 2, -2 )
 
 [node name="Box" parent="Level" instance=ExtResource( 4 )]
 
@@ -187,3 +188,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1868, 0.5, -12.5744 )
 
 [node name="Box5" parent="Level" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 11.9256 )
+

@@ -12,8 +12,8 @@ func _ready():
     set_as_toplevel(true)
 
 func _physics_process(delta):
-    var hor_dir = (int(Input.is_action_pressed("ui_left")) * -1) + int(Input.is_action_pressed("ui_right"))
-    var ver_dir = (int(Input.is_action_pressed("ui_up")) * -1) + int(Input.is_action_pressed("ui_down"))
+    var hor_dir = (int(Input.is_action_pressed("ui_right")) * -1) + int(Input.is_action_pressed("ui_left"))
+    var ver_dir = (int(Input.is_action_pressed("ui_down")) * -1) + int(Input.is_action_pressed("ui_up"))
 
     if ver_dir != 0 || hor_dir != 0:
         rotate_object_local(Vector3(-1, 0, 0), look_speed * ver_dir * PI) # rotate in Y first

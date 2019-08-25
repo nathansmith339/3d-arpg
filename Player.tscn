@@ -27,11 +27,7 @@ material/0 = null
 [node name="Target" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
 
-[node name="Outter" type="Spatial" parent="Target"]
-
-[node name="Innter" type="Spatial" parent="Target/Outter"]
-
-[node name="Camera" type="Camera" parent="Target/Outter/Innter"]
+[node name="Camera" type="Camera" parent="Target"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5 )
 current = true
 script = ExtResource( 2 )

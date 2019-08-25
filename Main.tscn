@@ -22,6 +22,7 @@ points = PoolVector3Array( 20, 0, 20, -20, 0, 20, 20, 0, -20, -20, 0, -20 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10516, 0 )
+velocity = Vector3( 0, 0, 0 )
 
 [node name="Level" type="Spatial" parent="."]
 
